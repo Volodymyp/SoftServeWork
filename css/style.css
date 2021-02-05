@@ -16,3 +16,24 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
+.header{
+	position: fixed;
+	z-index: 500; /*тимчасово*/
+}
+
+.main{
+	max-height: 100vh;
+	overflow: hidden;
+}
+.video{
+	position: relative;
+	padding-bottom: 56.25%;
+}
+
+.video__media{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
