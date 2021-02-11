@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="css/iconsfont.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="img/page-icon.svg">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -63,7 +65,7 @@
 	</main>
 	<section class="welcome">
 		<div class="container">
-			<p class="aboveheader">- Welcome!</p>
+			<p class="abovetitle">- Welcome!</p>
 			<h3 class="welcome__title title">Find the Best Place to Prosper and Grow Your Business.</h3>
 			<p class="suptitle">Rent an office, workplace in our coworking space, or a conference hall
 				for your
@@ -92,84 +94,104 @@
 			</div>
 		</div>
 	</section>
-	<!-- <div class="about" id="about">
-		<div>
-			<img src="img/building.webp" alt="manhattan main building">
+	<div class="about" id="about">
+		<div class="about__container container">
+			<div class="about__img">
+				<img src="img/building.webp" alt="manhattan main building">
+			</div>
+			<article>
+				<p class="about__abovetitle abovetitle">- About Us</p>
+				<h3 class="about__title title">The Perfect Place to Develop Your Business and Achieve Great Results.
+				</h3>
+				<p class="about__suptitle suptitle">Our office center is located in the Boston business district. The Forum
+					center is ideal for a wide variety of businesses of any scale:</p>
+				<ul class="about__list">
+					<li class="text">branches of large holdings;</li>
+					<li class="text">local companies;</li>
+					<li class="text">startups, etc.</li>
+				</ul>
+				<p class="about-text text">
+					We offer the most comfortable conditions for your business – modern offices of
+					various sizes, equipped workplaces in our coworking spaces, unique infrastructure, and attractive rental
+					prices.
+				</p>
+				<a class="about__btn" href="#services">Our services</a>
+			</article>
 		</div>
-		<article>
-			<p class="about__abovetitle">- About Us</p>
-			<h3>The Perfect Place to Develop Your Business and Achieve Great Results.</h3>
-			<p class="about__suptitle"></p>
-			<ul class="about__list">
-				<li>branches of large holdings;</li>
-				<li>local companies;</li>
-				<li>startups, etc.</li>
-			</ul>
-			<p class="about-text text">
-				We offer the most comfortable conditions for your business – modern offices of
-				various sizes, equipped workplaces in our coworking spaces, unique infrastructure, and attractive rental
-				prices.
-			</p>
-			<a href="#services">Out services</a>
-		</article>
 	</div>
 	<section class="neighbours">
-		<p class="neighbours__abovetitle">- Your Future Neighbours</p>
-		<h3 class="neighbours__title">Work on the Same Floor With These Well-Known Companies.</h3>
-		<p class="neighbours__suptitle">Get advantage of not only comfortable offices but also networking options.</p>
-		<div class="neighbours__slider">
-			<div>
-				<img src="img/carousel/adidas.webp" alt="adidas logo">
-			</div>
-			<div>
-				<img src="img/carousel/apple.webp" alt="apple logo">
-			</div>
-			<div>
-				<img src="img/carousel/boko.webp" alt="boko logo">
-			</div>
-			<div>
-				<img src="img/carousel/bandai.webp" alt="bandai logo">
-			</div>
-			<div>
-				<img src="img/carousel/walmart.webp" alt="walmart logo">
-			</div>
-			<div>
-				<img src="img/carousel/ripple.webp" alt="ropple logo">
+		<div class="container">
+			<p class="neighbours__abovetitle abovetitle">- Your Future Neighbours</p>
+			<h3 class="neighbours__title title">Well-Known Companies.</h3>
+			<p class="neighbours__suptitle suptitle">Get advantage of not only comfortable offices but also networking
+				options.</p>
+			<div class="slider-container">
+				<div class="neighbours__slider slider-produtos-wrap">
+					<div class="slider-produtos-destaque swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/carousel/adidas.webp" alt="adidas logo">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/carousel/apple.webp" alt="apple logo">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/carousel/boko.webp" alt="boko logo">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/carousel/bandai.webp" alt="bandai logo">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/carousel/walmart.webp" alt="walmart logo">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/carousel/ripple.webp" alt="ropple logo">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-prev"></div>
+					<div class="swiper-next"></div>
+				</div>
 			</div>
 		</div>
 	</section>
 	<div class="choose">
-		<article class="choose__content">
-			<p class="choose__content-abovetitle">- Why Choose Us</p>
-			<h3 class="choose__content-title">Move to Forum and Leave Your Worries Behind.</h3>
-			<p class="choose__content-suptitle">
-				We provide our clients with the opportunity to work in the best conditions with
-				maximum comfort.
-			</p>
-			<p class="choose__content-text text">
-				Over the years of our operation, we have done everything possible to provide our clients with the best
-				working conditions. In the Forum business center, you will find everything you need to run your business.
-			</p>
-			<div class="choose__count">
-				<p class="choose__count-title">12,000m²</p>
-				<p class="choose__count-text">Free space of all offices and conference rooms available.</p>
+		<div class="container choose-container">
+			<article class="choose__content">
+				<p class="choose__content-abovetitle abovetitle">- Why Choose Us</p>
+				<h3 class="choose__content-title title">Move to Forum and Leave Your Worries Behind.</h3>
+				<p class="choose__content-suptitle suptitle">
+					We provide our clients with the opportunity to work in the best conditions with
+					maximum comfort.
+				</p>
+				<p class="choose__content-text text">
+					Over the years of our operation, we have done everything possible to provide our clients with the best
+					working conditions. In the Forum business center, you will find everything you need to run your business.
+				</p>
+				<div class="choose__count">
+					<p class="choose__count-title"><span class="count" data-max="120">0</span>00m²</p>
+					<p class="choose__count-text">Free space of all offices and conference rooms available.</p>
+				</div>
+				<div class="choose__count">
+					<p class="choose__count-title"><span class="count" data-max="320">0</span>0</span></p>
+					<p class="choose__count-text">Employees & staffs service our renters.</p>
+				</div>
+				<div class="choose__count">
+					<p class="choose__count-title"><span class="count" data-max="115">0</span>0</span></p>
+					<p class="choose__count-text">Workspaces in the Forum coworking space.</p>
+				</div>
+			</article>
+			<div class="choose__counter ibg">
+				<img src="img/count-bg.webp" alt="many dots">
+				<div class="counter__content">
+					<p class="counter__content-abovetitle">- Our History</p>
+					<p class="counter__content-title" data-max="78">0</p>
+					<p class="counter__content-suptitle">Years of Operation</p>
+				</div>
 			</div>
-			<div>
-				<p class="choose__count-title">320</p>
-				<p class="choose__count-text">Employees & staffs service our renters.</p>
-			</div>
-			<div>
-				<p class="choose__count-title">1,150</p>
-				<p class="choose__count-text">Workspaces in the Forum coworking space.</p>
-			</div>
-		</article>
-		<div class="choose__counter">
-			<p class="choose__counter-abovetitle">- Our History</p>
-			<p class="choose__counter-title">15</p>
-			<p class="choose__counter-suptitle">Years of Operation</p>
 		</div>
 	</div>
-	<section id="services">
+	<!-- <section id="services">
 		<p class="services__abovetitle">- Services</p>
 		<h3 class="services__title">Get Advantage of All Services That We Can Offer for You.</h3>
 		<p class="services__suptitle">
@@ -419,6 +441,9 @@
 		</div>
 	</footer> -->
 
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80627.0161713778!2d4.2935739132601975!3d50.83867903853523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x627cc2819bce6c1a!2sManhattan%20Center!5e0!3m2!1sru!2sua!4v1612618956942!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
