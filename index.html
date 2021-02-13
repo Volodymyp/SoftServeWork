@@ -6,10 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Manhattan</title>
 	<link rel="stylesheet" href="css/iconsfont.css">
-	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="icon" href="img/page-icon.svg">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -126,8 +127,8 @@
 			<p class="neighbours__suptitle suptitle">Get advantage of not only comfortable offices but also networking
 				options.</p>
 			<div class="slider-container">
-				<div class="neighbours__slider slider-produtos-wrap">
-					<div class="slider-produtos-destaque swiper-container">
+				<div class="neighbours__slider">
+					<div class="swiper-container neighbours__swiper-container">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<img src="img/carousel/adidas.webp" alt="adidas logo">
@@ -191,107 +192,168 @@
 			</div>
 		</div>
 	</div>
-	<section id="services">
-		<p class="services__abovetitle">- Services</p>
-		<h3 class="services__title">Get Advantage of All Services That We Can Offer for You.</h3>
-		<p class="services__suptitle">
-			We have created a unique infrastructure that allows our residents to work and relax productively.
-		</p>
-		<div class="services__slider">
-			<article class="services__slider-box">
-				<img src="img/carousel/zoom.jfif" alt="office with computers">
-				<h4>Modern Offices</h4>
-				<p>Rent a comfortable office of any area, from 5 to 800 square meters on any of 25 floors. </p>
-			</article>
-			<article class="services__slider-box">
-				<img src="img/carousel/projector-hall.jfif" alt="office with chairs and projector">
-				<h4>Conference Rooms</h4>
-				<p>Use conference rooms on every floor whenever you need to meet with your team, contractors, or
-					partners.
-				</p>
-			</article>
-			<article class="services__slider-box">
-				<img src="img/carousel/rest-corner.jfif" alt="office rest corner">
-				<h4>Covorking spaces</h4>
-				<p>We have 5 coworking spaces of various capacity on different floors of the Forum business center.</p>
-			</article>
-			<article class="services__slider-box">
-				<img src="img/carousel/cafe.jfif" alt="cafe">
-				<h4>Restaurants</h4>
-				<p>Book a table at Italia Osteria, Irish O'Neil Pub or Little France. Or simply grab your lunch at our
-					snack
-					bar.</p>
-			</article>
-			<article class="services__slider-box">
-				<img src="img/carousel/cafe.jfif" alt="cafe">
-				<h4>Gym and Swimming pool</h4>
-				<p>All the residents get 24/7 access to our YouSport Fitness & Wellness Center.</p>
-			</article>
+	<section id="services" class="services">
+		<div class="container">
+			<p class="services__abovetitle abovetitle">- Services</p>
+			<h3 class="services__title title">Get Advantage of All Services That We Can Offer for You.</h3>
+			<p class="services__suptitle suptitle">
+				We have created a unique infrastructure that allows our residents to work and relax productively.
+			</p>
+			<div class="slider-container">
+				<div class="services__slider">
+					<div class="swiper-container services__swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<article class="services__slider-box">
+									<a href="img/carousel/zoom.jfif" rel="lightgallery[flowers]">
+										<img class="services__slider-img" src="img/carousel/zoom.jfif" alt="office with computers"
+											rel="shadowbox">
+										<button class="services__slider-btn" type="button">Discover more</button>
+									</a>
+									<h4>Modern Offices</h4>
+									<p>Rent a comfortable office of any area, from 5 to 800 square meters on any of 25 floors.
+									</p>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="services__slider-box">
+									<a href="img/carousel/projector-hall.jfif" rel="lightgallery[flowers]">
+										<img class="services__slider-img" src="img/carousel/projector-hall.jfif"
+											alt="office with chairs and projector" rel="shadowbox">
+										<button class="services__slider-btn" type="button">Discover more</button>
+									</a>
+									<h4>Conference Rooms</h4>
+									<p>Use conference rooms on every floor whenever you need to meet with your team, contractors,
+										or
+										partners.
+									</p>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="services__slider-box">
+									<a href="img/carousel/rest-room.jfif" rel="lightgallery[flowers]">
+										<img class="services__slider-img" src="img/carousel/rest-room.jfif"
+											alt="office rest corner" rel="shadowbox">
+										<button class="services__slider-btn" type="button">Discover more</button>
+									</a>
+									<h4>Covorking spaces</h4>
+									<p>We have 5 coworking spaces of various capacity on different floors of the Forum business
+										center.</p>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="services__slider-box">
+									<a href="img/carousel/cafe.jfif" rel="lightgallery[flowers]">
+										<img class="services__slider-img" src="img/carousel/cafe.jfif" alt="cafe" rel="shadowbox">
+										<button class="services__slider-btn" type="button">Discover more</button>
+									</a>
+									<h4>Restaurants</h4>
+									<p>Book a table at Italia Osteria, Irish O'Neil Pub or Little France. Or simply grab your
+										lunch
+										at our
+										snack
+										bar.</p>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="services__slider-box">
+									<a href="img/carousel/bicycle.jfif" rel="lightgallery[flowers]">
+										<img class="services__slider-img" src="img/carousel/bicycle.jfif" alt="gym"
+											rel="shadowbox">
+										<button class="services__slider-btn" type="button">Discover more</button>
+									</a>
+									<h4>Gym and Swimming pool</h4>
+									<p>All the residents get 24/7 access to our YouSport Fitness & Wellness Center.</p>
+								</article>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-prev"></div>
+					<div class="swiper-next"></div>
+				</div>
+			</div>
 		</div>
 	</section>
-	<!-- <div class="pricing" id="pricing">
-		<article class="pricing__content">
-			<p class="pricing__content-abovetitle">- Pricing</p>
-			<h3 class="pricing__content-title">Flexible Pricing Plans for Our Clients.</h3>
-			<p class="pricing__content-suptitle">To rent an office in our business center, contact us in any convenient
-				way. We will make an appointment to discuss all the nuances and sign a contract.</p>
-		</article>
-		<article class="pricing__card">
-			<h4 class="pricing__card-title">Easy Start</h4>
-			<p class="icon-business-center"></p>
-			<p class="pricing__card-price">$10 <span>/ per square meter</span></p>
-			<ul class="pricing__card-list">
-				<li>up to 70 m2</li>
-				<li>Wi-Fi, IP telephony</li>
-				<li>monthly payment possible</li>
-				<li>fully furnished offices </li>
-			</ul>
-			<button class="pricing__card-btn">Rent an Office</button>
-		</article>
-		<article class="pricing__card">
-			<h4 class="pricing__card-title">Enterprise</h4>
-			<p class="icon-business-front"></p>
-			<p class="pricing__card-price">Enterprise $30 <span>/ per square meter</span></p>
-			<ul class="pricing__card-list">
-				<li>up to 800 m2</li>
-				<li>free conference rooms</li>
-				<li>cleaning of premises twice a week</li>
-				<li>exclusive design</li>
-			</ul>
-			<button class="pricing__card-btn">Rent an Office</button>
-		</article>
+	<div class="pricing" id="pricing">
+		<div class="pricing-container">
+			<article class="pricing__content">
+				<p class="abovetitle">- Pricing</p>
+				<h3 class="title">Flexible Pricing Plans for Our Clients.</h3>
+				<p class="suptitle">To rent an office in our business center, contact us in any convenient
+					way. We will make an appointment to discuss all the nuances and sign a contract.</p>
+			</article>
+			<article class="pricing__card">
+				<h4 class="pricing__card-title">Easy Start</h4>
+				<p class="icon-business-center"></p>
+				<p class="pricing__card-price">$10 <span>/ per square meter</span></p>
+				<ul class="pricing__card-list">
+					<li>up to 70 m2</li>
+					<li>Wi-Fi, IP telephony</li>
+					<li>monthly payment possible</li>
+					<li>fully furnished offices </li>
+				</ul>
+				<button class="pricing__card-btn">Rent an Office</button>
+			</article>
+			<article class="pricing__card">
+				<h4 class="pricing__card-title">Enterprise</h4>
+				<p class="icon-business-front"></p>
+				<p class="pricing__card-price">Enterprise $30 <span>/ per square meter</span></p>
+				<ul class="pricing__card-list">
+					<li>up to 800 m2</li>
+					<li>free conference rooms</li>
+					<li>cleaning of premises twice a week</li>
+					<li>exclusive design</li>
+				</ul>
+				<button class="pricing__card-btn">Rent an Office</button>
+			</article>
+		</div>
 	</div>
 	<section class="enjoy">
-		<p class="enjoy__abovetitle">- Work, Meet, Enjoy</p>
-		<h3 class="enjoy__title">A Unique Business Center With Its Own Ecosystem for Residents.</h3>
-		<p class="enjoy__suptitle">We offer comfortable offices, conference rooms, and all the necessary
-			infrastructure.
-		</p>
-		<div class="enjoy__info">
-			<p class="enjoy__info-text text">In our business center, you will find everything you need to run your
-				business
-				in the best conditions. We offer offices of any size for any number of people.</p>
-			<p class="enjoy__info-text text">Our business center is conveniently located. It is situated in the Boston
-				downtown. Therefore, there will be no problems with public or personal transport.</p>
-			<p class="enjoy__info-text text">he offices have all the necessary equipment – furniture, kitchen,
-				comfortable
-				armchairs in the relax zone. Large panoramic windows provide a stunning view. Every resident of our
-				business
-				center can also use our fitness & wellness center.</p>
-			<p class="enjoy__info-text text">Climate control systems ensure the most comfortable work conditions. The
-				Forum
-				business center is equipped with modern security systems. Unauthorized entry is almost impossible. </p>
+		<div class="container">
+			<p class="abovetitle">- Work, Meet, Enjoy</p>
+			<h3 class="title">A Unique Business Center With Its Own Ecosystem for Residents.</h3>
+			<p class="suptitle">We offer comfortable offices, conference rooms, and all the necessary
+				infrastructure.
+			</p>
+			<div class="enjoy__info">
+				<p class="enjoy__info-text text">In our business center, you will find everything you need to run your
+					business
+					in the best conditions. We offer offices of any size for any number of people.</p>
+				<p class="enjoy__info-text text">Our business center is conveniently located. It is situated in the Boston
+					downtown. Therefore, there will be no problems with public or personal transport.</p>
+				<p class="enjoy__info-text text">he offices have all the necessary equipment – furniture, kitchen,
+					comfortable
+					armchairs in the relax zone. Large panoramic windows provide a stunning view. Every resident of our
+					business
+					center can also use our fitness & wellness center.</p>
+				<p class="enjoy__info-text text">Climate control systems ensure the most comfortable work conditions. The
+					Forum
+					business center is equipped with modern security systems. Unauthorized entry is almost impossible. </p>
+			</div>
 		</div>
 	</section>
 	<div class="promo">
-		<img src="img/coridor.jfif" alt="corridor">
+		<!-- <img src="img/coridor.jfif" alt="corridor"> -->
 		<article class="promo__content">
 			<p class="promo__content-abovetitle">- Promo</p>
 			<h3 class="promo__content-title">Watch Our Video.</h3>
-			<button class="icon-play"></button>
+			<button></button>
 		</article>
+		<!-- <video src="https://www.youtube.com/watch?v=rqLGMMXePQU&t=3s" poster="img/coridor.jfif" controls></video> -->
+		<iframe width="100%" height="400px" src="https://www.youtube.com/embed/rqLGMMXePQU" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
+		html,body{height:auto; width: 100%}
+		img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+		span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black;  z-index:2}
+		span:before{content:''; position:absolute; top:50%; left: 49.2%; background-color:#d1b997; border-radius: 50%; width: 70px; height: 70px; transform:translate(-50%, -50%); z-index:-1}
+		</style>
+		<a href=https://www.youtube.com/embed/rqLGMMXePQU?autoplay=1>
+		<img src='img/coridor.jfif' alt='Demo video'>
+		<span class='my-frame-play'>▶</span>
+		</a>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+			title="Demo video">
+		</iframe>
 	</div>
-	<section class="awards">
+	<!-- <section class="awards">
 		<p class="awards__abovetitle">- Awards</p>
 		<h3 class="awards__title">We're Doing Our Best Everyday to Serve Your Company.</h3>
 		<p class="awards__suptitle">Our business center receives significant awards every year. Thank you for your
@@ -441,10 +503,12 @@
 		</div>
 	</footer> -->
 
-
-	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/lightgallery.min.js"></script>
 	<script src="js/script.js"></script>
+
+	<script></script>
+
 </body>
 <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80627.0161713778!2d4.2935739132601975!3d50.83867903853523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x627cc2819bce6c1a!2sManhattan%20Center!5e0!3m2!1sru!2sua!4v1612618956942!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
 
