@@ -105,3 +105,19 @@ for (let i of document.querySelectorAll(".count, .counter__content-title")) {
 
 lightgallery.init();
 
+let open_modal = document.getElementById('open_modal');
+let close_modal = document.getElementById('close_modal');
+let modal = document.getElementById('modal');
+let body = document.getElementsByTagName('body')[0];
+open_modal.onclick = function () { // клик на открытие
+	modal.classList.add('modal_vis'); // добавляем видимость окна
+	body.classList.add('body_block'); // убираем прокрутку
+	document.getElementById('videoFrame').src = "https://www.youtube.com/embed/rqLGMMXePQU"
+};
+close_modal.onclick = function () { // клик на закрытие
+	window.setTimeout(function () { // удаляем окно через полсекунды (чтобы увидеть эффект закрытия).
+		modal.classList.remove('modal_vis');
+		body.classList.remove('body_block'); // возвращаем прокрутку
+	}, 500);
+	document.getElementById('videoFrame').src = "not.found/404"
+};

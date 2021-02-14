@@ -331,31 +331,28 @@
 			</div>
 		</div>
 	</section>
-	<div class="promo">
-		<!-- <img src="img/coridor.jfif" alt="corridor"> -->
+	<div class="promo ibg">
+		<img src="img/coridor.jfif" alt="corridor">
 		<article class="promo__content">
-			<p class="promo__content-abovetitle">- Promo</p>
+			<p class="promo__content-abovetitle abovetitle">- Promo</p>
 			<h3 class="promo__content-title">Watch Our Video.</h3>
-			<button></button>
+			<a class="promo__content-link" href="#open" id="open_modal"><span class="icon-play"></span></a>
+			<!-- <a class="business__content-btn" id="open_modal" href="#open">Join Us</a> -->
 		</article>
-		<!-- <video src="https://www.youtube.com/watch?v=rqLGMMXePQU&t=3s" poster="img/coridor.jfif" controls></video> -->
-		<iframe width="100%" height="400px" src="https://www.youtube.com/embed/rqLGMMXePQU" srcdoc="<style>*{padding:0;margin:0;overflow:hidden}
-		html,body{height:auto; width: 100%}
-		img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
-		span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black;  z-index:2}
-		span:before{content:''; position:absolute; top:50%; left: 49.2%; background-color:#d1b997; border-radius: 50%; width: 70px; height: 70px; transform:translate(-50%, -50%); z-index:-1}
-		</style>
-		<a href=https://www.youtube.com/embed/rqLGMMXePQU?autoplay=1>
-		<img src='img/coridor.jfif' alt='Demo video'>
-		<span class='my-frame-play'>▶</span>
-		</a>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-			title="Demo video">
-		</iframe>
+	</div>
+	<div class="modal" id="modal">
+		<div id="close_modal">+</div>
+		<div class="modal__frame"><iframe id="videoFrame" width="100%" height="100%"
+				src="https://www.youtube.com/embed/rqLGMMXePQU" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+		</div>
 	</div>
 	<!-- <section class="awards">
-		<p class="awards__abovetitle">- Awards</p>
-		<h3 class="awards__title">We're Doing Our Best Everyday to Serve Your Company.</h3>
-		<p class="awards__suptitle">Our business center receives significant awards every year. Thank you for your
+		<p class="awards__abovetitle abovetitle">- Awards</p>
+		<h3 class="awards__title title">We're Doing Our Best Everyday to Serve Your Company.</h3>
+		<p class="awards__suptitle suptitle">Our business center receives significant awards every year. Thank you for
+			your
 			trust!
 		</p>
 		<div class="awards__company">
