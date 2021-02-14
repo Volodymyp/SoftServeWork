@@ -832,9 +832,9 @@ body {
 	width: 100%;
 }
 
-.swiper-slide {
+.neighbours .swiper-slide {
 	z-index: 1;
-	height: 150px;
+	height: auto;
 }
 
 .swiper-prev,
@@ -1059,6 +1059,16 @@ body {
 .services__slider-box {
 	overflow: hidden;
 	position: relative;
+}
+
+.swiper-slide img {
+	width: 100%;
+	height: auto;
+}
+
+.services .swiper-slide {
+	z-index: 1;
+	height: auto;
 }
 
 .services__slider-img {
