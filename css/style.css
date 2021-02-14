@@ -356,11 +356,15 @@ h6 {
 	}
 	.header__menu {
 		position: relative;
+		left: 0;
 		height: auto;
 		background-color: transparent;
 		padding-top: 0;
 		z-index: 7;
 		padding-right: 20px;
+	}
+	.header__menu.active {
+		position: static;
 	}
 	.header__list {
 		padding-top: 0;
