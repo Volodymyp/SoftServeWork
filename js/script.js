@@ -1,5 +1,11 @@
-//header animation change when scroll
-window.onscroll = () => {
+document.querySelector('.header__burger').addEventListener('click', function () {
+	document.querySelector('.header__burger span').classList.toggle('active');
+	document.querySelector('.header__burger').classList.toggle('active');
+	document.querySelector('.header__menu').classList.toggle('active');
+})
+
+
+window.addEventListener('scroll', () => {
 	const header = document.querySelector('.main-header');
 
 	const Y = window.scrollY;
@@ -9,11 +15,9 @@ window.onscroll = () => {
 	} else if (Y < 50) {
 		header.classList.remove('fixed');
 	}
-}
+});
 
 
-
-//background image
 function ibg() {
 
 	let ibg = document.querySelectorAll(".ibg");
@@ -49,7 +53,6 @@ document.querySelectorAll('.neighbours__swiper-container').forEach(function (ele
 			},
 			991: {
 				slidesPerView: 4,
-				spaceBetween: 30,
 			},
 		}
 	});
@@ -59,9 +62,9 @@ document.querySelectorAll('.services__swiper-container').forEach(function (elem)
 	new Swiper(elem, {
 		slidesPerView: 1,
 		loop: true,
-		// autoplay: {
-		// 	delay: 5000,
-		// },
+		autoplay: {
+			delay: 5000,
+		},
 		spaceBetween: 10,
 		navigation: {
 			nextEl: elem.nextElementSibling.nextElementSibling,
@@ -109,15 +112,30 @@ let open_modal = document.getElementById('open_modal');
 let close_modal = document.getElementById('close_modal');
 let modal = document.getElementById('modal');
 let body = document.getElementsByTagName('body')[0];
-open_modal.onclick = function () { // клик на открытие
-	modal.classList.add('modal_vis'); // добавляем видимость окна
-	body.classList.add('body_block'); // убираем прокрутку
+open_modal.addEventListener('click', function () {
+	modal.classList.add('modal_vis');
+	body.classList.add('body_block');
 	document.getElementById('videoFrame').src = "https://www.youtube.com/embed/rqLGMMXePQU"
-};
-close_modal.onclick = function () { // клик на закрытие
-	window.setTimeout(function () { // удаляем окно через полсекунды (чтобы увидеть эффект закрытия).
+});
+close_modal.addEventListener('click', function () {
+	window.setTimeout(function () {
 		modal.classList.remove('modal_vis');
-		body.classList.remove('body_block'); // возвращаем прокрутку
+		body.classList.remove('body_block');
 	}, 500);
 	document.getElementById('videoFrame').src = "not.found/404"
-};
+});
+
+let business = document.querySelector('.video__content-business');
+let people = document.querySelector('.video__content-people');
+let video = document.querySelector('.video__media');
+
+business.addEventListener('mouseover', function () {
+	video.src = "video/business-teaser.mp4";
+	document.querySelector('.video__content-people h2').style.color = "#878787";
+	document.querySelector('.video__content-business h2').style.color = "#fff";
+});
+people.addEventListener('mouseover', function () {
+	video.src = "video/people-teaser.mp4";
+	document.querySelector('.video__content-people h2').style.color = "#fff";
+	document.querySelector('.video__content-business h2').style.color = "#878787";
+});
