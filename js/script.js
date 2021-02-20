@@ -86,6 +86,33 @@ document.querySelectorAll('.services__swiper-container').forEach(function (elem)
 		}
 	});
 });
+document.querySelectorAll('.testimonials__swiper-container').forEach(function (elem) {
+	new Swiper(elem, {
+		slidesPerView: 1,
+		loop: true,
+		autoplay: {
+			delay: 5000,
+		},
+		spaceBetween: 10,
+		navigation: {
+			nextEl: elem.nextElementSibling.nextElementSibling,
+			prevEl: elem.nextElementSibling,
+		},
+		breakpoints: {
+			525: {
+				slidesPerView: 1,
+				spaceBetween: 20,
+			},
+			767: {
+				slidesPerView: 2,
+				spaceBetween: 30,
+			},
+			991: {
+				slidesPerView: 2,
+			},
+		}
+	});
+});
 
 for (let i of document.querySelectorAll(".count, .counter__content-title")) {
 
@@ -122,7 +149,7 @@ close_modal.addEventListener('click', function () {
 		modal.classList.remove('modal_vis');
 		body.classList.remove('body_block');
 	}, 500);
-	document.getElementById('videoFrame').src = "not.found/404"
+	document.getElementById('videoFrame').src = ""
 });
 
 let business = document.querySelector('.video__content-business');
@@ -139,3 +166,13 @@ people.addEventListener('mouseover', function () {
 	document.querySelector('.video__content-people h2').style.color = "#fff";
 	document.querySelector('.video__content-business h2').style.color = "#878787";
 });
+
+//////////////////////////////////////////////// not finish
+// let about = document.querySelector("#about");
+// window.addEventListener("scroll", function () {
+// 	var windo = window.pageYOffset + 100;
+// 	if (about.offsetTop <= windo && portfolio.offsetTop > windo) {
+// 		document.querySelector(".header__link--about").setAttribute("id", "active");
+// 		document.querySelector(".header__link--portfolio").removeAttribute("id", "active");
+// 	}
+// });
