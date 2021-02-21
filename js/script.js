@@ -209,13 +209,11 @@ if (intViewportWidth >= 1200) {
 }
 
 
-
-//////////////////////////////////////////////// not finish
-// let about = document.querySelector("#about");
-// window.addEventListener("scroll", function () {
-// 	var windo = window.pageYOffset + 100;
-// 	if (about.offsetTop <= windo && portfolio.offsetTop > windo) {
-// 		document.querySelector(".header__link--about").setAttribute("id", "active");
-// 		document.querySelector(".header__link--portfolio").removeAttribute("id", "active");
-// 	}
-// });
+let rectangle = document.querySelector(".about__img-rectangle");
+let rectangle_height = rectangle.clientHeight;
+window.addEventListener("scroll", function () {
+	var windo = window.pageYOffset - (rectangle_height * 2);
+	if (rectangle.offsetTop <= windo) {
+		rectangle.classList.add('rectangle-active');
+	}
+});
