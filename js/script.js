@@ -2,17 +2,18 @@ document.querySelector('.header__burger').addEventListener('click', function () 
 	document.querySelector('.header__burger span').classList.toggle('active');
 	document.querySelector('.header__burger').classList.toggle('active');
 	document.querySelector('.header__menu').classList.toggle('active');
+	document.querySelector('body').classList.toggle('lock');
 })
 
 
 window.addEventListener('scroll', () => {
 	const header = document.querySelector('.main-header');
 
-	const Y = window.scrollY;
+	const y = window.scrollY;
 
-	if (Y >= 100) {
+	if (y >= 100) {
 		header.classList.add('fixed');
-	} else if (Y < 50) {
+	} else if (y < 50) {
 		header.classList.remove('fixed');
 	}
 });
