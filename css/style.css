@@ -109,14 +109,14 @@ h6 {
 	--text-color: #878787;
 }
 
-body.lock {
+/* body.lock {
 	overflow: hidden;
 }
 @media (min-width: 767px) {
 	body.lock {
 		overflow: auto;
 	}
-}
+} */
 
 .container {
 	max-width: 980px;
