@@ -1525,6 +1525,9 @@ h6 {
 	position: relative;
 	padding-bottom: 55%;
 }
+.promo.imageToBackground {
+	background-attachment: fixed;
+}
 .promo:before {
 	position: absolute;
 	content: "";
