@@ -82,13 +82,13 @@ h6 {
 
 /*--------Background class--------*/
 
-.ibg {
+.imageToBackground {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
 }
-.ibg img {
+.imageToBackground img {
 	width: 0;
 	height: 0;
 	position: absolute;

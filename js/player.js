@@ -1,5 +1,3 @@
-
-
 const modalVideo = document.getElementById('my-video');
 const play = document.getElementById('play');
 const stop = document.getElementById('stop');
