@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/swiper.css" />
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/progress.css">
+	<link rel="stylesheet" href="css/rent.css">
 </head>
 
 <body>
@@ -591,12 +592,59 @@
 		</div>
 	</footer>
 
+	<div class="rent">
+		<div class="floor-container">
+			<label>Pick a floor:</label>
+			<select id="floor">
+				<option value="10">1st floor</option>
+				<option value="12">2nd floor</option>
+			</select>
+		</div>
 
+		<ul class="showcase">
+			<li>
+				<div class="office"></div>
+				<small>N/A</small>
+			</li>
+			<li>
+				<div class="office selected"></div>
+				<small>Selected</small>
+			</li>
+			<li>
+				<div class="office occupied"></div>
+				<small>Occupied</small>
+			</li>
+		</ul>
+
+		<div class="rent-container">
+			<div class="office__plan">
+				<img src="img/office.jpg" alt="office plan">
+			</div>
+			<div class="row">
+				<div class="room office office__room1" value="50"></div>
+				<div class="room office office__room2" value="40"></div>
+				<div class="room office office__room3 occupied" value="32"></div>
+				<div class="room office office__room4" value="65"></div>
+				<div class="room office office__room5 occupied" value="650"></div>
+				<div class="room office dance__hall" value="120"></div>
+				<div class="room office conference__room" value="110"></div>
+			</div>
+			<button class="rent__discaunt" type="button"></button>
+		</div>
+
+		<p class="text">
+			You have selected <span id="count">0</span> offices for a price of $<span id="total">0</span>
+		</p>
+		<p class="text">
+			The total area of selected offices <span id="total2">0</span>m<sup>2</sup>
+		</p>
+	</div>
 
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="js/lightgallery.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/player.js"></script>
+	<script src="js/rent.js"></script>
 
 	<script></script>
 

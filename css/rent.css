@@ -1,0 +1,256 @@
+.rent {
+	width: 300px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+.office__plan {
+	width: 300px;
+	height: 180px;
+}
+.office__plan img {
+	width: 100%;
+	height: 100%;
+}
+.floor-container {
+	margin: 20px 0;
+}
+
+.floor-container select {
+	background-color: #fff;
+	border: 0;
+	border-radius: 5px;
+	font-size: 14px;
+	margin-left: 10px;
+	padding: 5px 15px 5px 15px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.rent-container {
+	perspective: 1000px;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.office {
+	background-color: #44445154;
+	width: 15px;
+	height: 15px;
+}
+.office__room1 {
+	position: absolute;
+	top: 11px;
+	left: 12px;
+	width: 47px;
+	height: 62px;
+}
+.office__room2 {
+	position: absolute;
+	top: 11px;
+	left: 61px;
+	width: 35px;
+	height: 62px;
+}
+.office__room3 {
+	position: absolute;
+	top: 11px;
+	left: 97px;
+	width: 33px;
+	height: 62px;
+}
+.office__room4 {
+	position: absolute;
+	top: 105px;
+	left: 12px;
+	width: 67px;
+	height: 65px;
+}
+.office__room5 {
+	position: absolute;
+	top: 105px;
+	left: 81px;
+	width: 67px;
+	height: 65px;
+}
+.dance__hall {
+	position: absolute;
+	top: 11px;
+	left: 191px;
+	width: 97px;
+	height: 87px;
+}
+.conference__room {
+	position: absolute;
+	top: 100px;
+	left: 180px;
+	width: 108px;
+	height: 70px;
+}
+
+.office.selected {
+	background-color: #6febf64d;
+}
+
+.office.occupied {
+	background-color: rgba(255, 0, 0, 0.329);
+}
+
+.office:not(.occupied):hover {
+	cursor: pointer;
+}
+
+.showcase .office:not(.occupied):hover {
+	cursor: default;
+	transform: scale(1);
+}
+
+.showcase {
+	background: rgba(0, 0, 0, 0.1);
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: #777;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.showcase li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 10px;
+}
+
+.showcase li small {
+	margin-left: 2px;
+}
+
+.row {
+	display: flex;
+}
+
+p.text {
+	margin: 5px 0;
+}
+
+p.text span {
+	color: #6feaf6;
+}
+
+@media (min-width: 767px) {
+	.rent {
+		width: 750px;
+	}
+	.office__plan {
+		width: 750px;
+		height: 470px;
+	}
+	.office__room1 {
+		position: absolute;
+		top: 29px;
+		left: 30px;
+		width: 116px;
+		height: 160px;
+	}
+	.office__room2 {
+		position: absolute;
+		top: 29px;
+		left: 151px;
+		width: 88px;
+		height: 160px;
+	}
+	.office__room3 {
+		position: absolute;
+		top: 29px;
+		left: 243px;
+		width: 82px;
+		height: 159px;
+	}
+	.office__room4 {
+		position: absolute;
+		top: 274px;
+		left: 30px;
+		width: 166px;
+		height: 169px;
+	}
+	.office__room5 {
+		position: absolute;
+		top: 274px;
+		left: 202px;
+		width: 166px;
+		height: 169px;
+	}
+	.dance__hall {
+		position: absolute;
+		top: 29px;
+		left: 478px;
+		width: 242px;
+		height: 227px;
+	}
+	.conference__room {
+		position: absolute;
+		top: 259px;
+		left: 449px;
+		width: 271px;
+		height: 184px;
+	}
+}
+/* @media (min-width: 991px) {
+	.rent {
+		width: 750px;
+	}
+	.office_plan {
+		width: 750px;
+		height: 470px;
+	}
+	.office_room1 {
+		position: absolute;
+		top: 29px;
+		left: 30px;
+		width: 116px;
+		height: 160px;
+	}
+	.office_room2 {
+		position: absolute;
+		top: 29px;
+		left: 151px;
+		width: 174px;
+		height: 160px;
+	}
+	.office_room3 {
+		position: absolute;
+		top: 29px;
+		left: 243px;
+		width: 82px;
+		height: 159px;
+	}
+	.office_room4 {
+		position: absolute;
+		top: 274px;
+		left: 30px;
+		width: 166px;
+		height: 169px;
+	}
+	.office_room5 {
+		position: absolute;
+		top: 274px;
+		left: 202px;
+		width: 166px;
+		height: 169px;
+	}
+	.dance_hall {
+		position: absolute;
+		top: 29px;
+		left: 460px;
+		width: 242px;
+		height: 227px;
+	}
+	.conference_room {
+		position: absolute;
+		top: 259px;
+		left: 449px;
+		width: 271px;
+		height: 184px;
+	}
+} */
