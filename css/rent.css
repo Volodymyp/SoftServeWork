@@ -13,6 +13,8 @@
 }
 .floor-container {
 	margin: 20px 0;
+	color: blanchedalmond;
+	font-size: 1em;
 }
 
 .floor-container select {
@@ -113,6 +115,7 @@
 	list-style-type: none;
 	display: flex;
 	justify-content: space-between;
+	background-color: blanchedalmond;
 }
 
 .showcase li {

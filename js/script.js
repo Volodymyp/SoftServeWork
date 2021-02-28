@@ -21,7 +21,7 @@ window.addEventListener('scroll', () => {
 
 function imageToBg() {
 
-	let imageToBackground = document.querySelectorAll(".imageToBackground");
+	let imageToBackground = document.querySelectorAll(".ibg");
 	for (let i = 0; i < imageToBackground.length; i++) {
 		if (imageToBackground[i].querySelector('img')) {
 			imageToBackground[i].style.backgroundImage = 'url(' + imageToBackground[i].querySelector('img').getAttribute('src') + ')';
@@ -172,6 +172,22 @@ close_modalvideo.addEventListener('click', function () {
 		bodyvideo.classList.remove('body-video_block');
 	}, 500);
 	document.getElementById('my-video').src = ""
+});
+
+let open_modal2 = document.querySelectorAll('.open__modal-rent');
+let close_modal2 = document.getElementById('close__modal-rent');
+let modal2 = document.getElementById('modal-rent');
+let body2 = document.getElementsByTagName('body')[0];
+open_modal2.forEach((element) => element.addEventListener('click', function () {
+	modal2.classList.add('modal_vis');
+	body2.classList.add('body_block');
+})
+)
+close_modal2.addEventListener('click', function () {
+	window.setTimeout(function () {
+		modal2.classList.remove('modal_vis');
+		body2.classList.remove('body_block');
+	}, 500);
 });
 
 
