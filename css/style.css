@@ -1420,11 +1420,19 @@ textarea:not(:placeholder-shown) + label {
 input:focus + label {
 	font-size: 12px;
 }
-
+::placeholder {
+	opacity: 0;
+}
 ::-webkit-input-placeholder {
 	opacity: 0;
 }
-
+textarea:focus::placeholder,
+input:focus::placeholder {
+	opacity: 1;
+}
+textarea:focus::-webkit-input-placeholder {
+	opacity: 1;
+}
 input:focus::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder {
 	opacity: 1;
